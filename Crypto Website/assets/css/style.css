@@ -1,0 +1,281 @@
+/* Font-family for the web-page */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+header {
+    margin-bottom: 2px;
+    background-color: black;
+    color: white;
+}
+
+.logo_design{
+    color: white;
+    
+}
+
+nav{
+    margin-bottom: 2px;
+    background-color: black;
+    color: white;
+}
+
+/*Frequently used*/
+hr {
+    border-top: 3px solid #DAA520;
+    width: 30%;
+}
+
+/*For setting padding in columns*/
+.paddingimg {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/*Navbar*/
+
+.navbar-brand #logo-normal {
+    height: 70px;
+    display:block;
+}
+
+.navbar-brand #logo-phone {
+    display: none;
+}
+
+.navbar {
+    padding: 0 1rem;
+    border-bottom: 3px solid #FFD700;
+    outline: 2px solid 	#DAA520;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.8);
+    
+}
+
+.navbar-nav li {
+    padding-right: 25px;
+}
+
+.navbar .navbar-nav .nav-link:focus, 
+.navbar .navbar-nav .nav-link:hover {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-item .active {
+    color: #DAA520;
+    font-weight: 500;
+}
+
+.navbar-collapse {
+    text-align: center;
+  }
+
+  /*Footer*/
+
+  footer {
+      background-color: rgb(40, 50, 55) ;
+      padding-top: 2rem;
+      color: #FFFFFF;
+      border-top: 3px solid #DAA520;
+      outline: 2px solid #FFD700;
+      
+  }
+  
+  #footer-logo img {
+      height: 90px;
+      padding-bottom: .3rem;
+  }
+
+  .motto p {
+    font-size: 12px;
+}
+
+  .contacticon p i {
+
+    color: #DAA520;
+  }
+
+  #facebook i {
+      font-size: 70px;
+      color: #C0C0C0;
+      padding-bottom: 1.5rem;
+  }
+
+  #facebook i:focus, 
+  #facebook i:hover {
+    color: 	#DAA520;
+    font-weight: 500;
+  }
+
+  #socket {
+    border-top: 1px solid #FFD700;
+    padding: .3rem 0;
+  }
+
+/*Home Page -------------------------------------------------------------------------------------------------------------------------*/
+  
+/*Hero Section*/
+.hero {
+    background-image: url("../images/heroimage_2.jpg");
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,1);
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero div h1 {
+    color: 	#DAA520;
+}
+
+.hero div h4 {
+    color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+/*Services page------------------------------------------------------------------------------------------------------------------------*/
+
+.bordertopgold {
+    border-top: 3px solid #DAA520;
+}
+
+/*Removes border accordian, found the solution here:  https://kriesi.at/support/topic/remove-border-from-accordion-element/ */
+
+.noborder{
+    border-color: transparent !important;
+}
+
+.servicesfooter {
+    margin-top: 5px;
+}
+
+.marginbutton p button {
+    margin-top: 30px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Gallery page------------------------------------------------------------------------------------------------------------------------*/
+ .resizeimg {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bedroom-margin {
+    margin-bottom: 3rem;
+}
+
+.margintop {
+    margin-top: 30px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Contact page-------------------------------------------------------------------------------------------------------------------------*/
+
+form {
+    
+    border: 1px solid #D3D3D3;
+    display: inline-block;
+    margin: 1.25rem auto;
+    margin-bottom: 2rem;
+    width: 70%;
+    margin: 1.25rem auto;
+    margin-bottom: 200px;
+    padding: 1rem 1rem;    
+}
+
+form img {
+    width: 3%;
+    height: auto;
+}
+
+.screwleft {
+    float: left;
+}
+.screwright {
+    float: right;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*About page---------------------------------------------------------------------------------------------------------------------------*/
+
+.text-center h1 {
+    margin-top: 1rem;
+}
+
+.text-center button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Media Queries*/
+
+@media (max-width: 480px) {
+
+.navbar-brand #logo-normal {
+        display:none;
+    }
+    
+.navbar-brand #logo-phone {
+        height: 70px;
+        display: block;
+    }
+ 
+.resizeimg {
+        width: 97%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+form img {
+        width: 12%;
+        height: auto;
+    }
+
+
+
+}
+
+@media (min-width: 480px) and  (max-width: 767px) {
+
+    .resizeimg {
+        width: 95%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    form img {
+        width: 6%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .resizeimg {
+        width: 95%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    form img {
+        width: 5%;
+        height: auto;
+    }
+    
+}
+
