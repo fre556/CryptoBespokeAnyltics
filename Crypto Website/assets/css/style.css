@@ -51,8 +51,8 @@ hr {
 
 .navbar {
     padding: 0 1rem;
-    border-bottom: 3px solid #FFD700;
-    outline: 2px solid 	#DAA520;
+    border-bottom: 3px solid white;
+    outline: 2px solid 	white;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.8);
     
 }
@@ -62,15 +62,17 @@ hr {
 }
 
 .navbar .navbar-nav .nav-link:focus, 
-.navbar .navbar-nav .nav-link:hover {
+.navbar .navbar-nav {
     color: white;
     font-weight: 500;
 }
 
+
 .navbar .navbar-nav .nav-item .active {
-    color: #DAA520;
+    color: #ffffff;
     font-weight: 500;
 }
+
 
 .navbar-collapse {
     text-align: center;
@@ -82,8 +84,8 @@ hr {
       background-color: rgb(40, 50, 55) ;
       padding-top: 2rem;
       color: #FFFFFF;
-      border-top: 3px solid #DAA520;
-      outline: 2px solid #FFD700;
+      border-top: 3px solid white;
+      outline: 2px solid white;
       
   }
   
@@ -98,23 +100,12 @@ hr {
 
   .contacticon p i {
 
-    color: #DAA520;
+    color: white;
   }
 
-  #facebook i {
-      font-size: 70px;
-      color: #C0C0C0;
-      padding-bottom: 1.5rem;
-  }
-
-  #facebook i:focus, 
-  #facebook i:hover {
-    color: 	#DAA520;
-    font-weight: 500;
-  }
 
   #socket {
-    border-top: 1px solid #FFD700;
+    border-top: 1px solid white;
     padding: .3rem 0;
   }
 
@@ -143,7 +134,7 @@ hr {
 /*Services page------------------------------------------------------------------------------------------------------------------------*/
 
 .bordertopgold {
-    border-top: 3px solid #DAA520;
+    border-top: 3px solid #f8f8f7;
 }
 
 /*Removes border accordian, found the solution here:  https://kriesi.at/support/topic/remove-border-from-accordion-element/ */
@@ -157,24 +148,6 @@ hr {
 }
 
 .marginbutton p button {
-    margin-top: 30px;
-}
-
-/*-------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Gallery page------------------------------------------------------------------------------------------------------------------------*/
- .resizeimg {
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.bedroom-margin {
-    margin-bottom: 3rem;
-}
-
-.margintop {
     margin-top: 30px;
 }
 
