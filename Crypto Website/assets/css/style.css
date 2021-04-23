@@ -10,8 +10,18 @@ html, body {
 }
 header {
     margin-bottom: 2px;
-    background-color: black;
+    background-color: #302B2B;
     color: white;
+    font-family: 'Abril Fatface';
+    
+}
+
+.logo{
+    font-size: 2em;
+    border: grey;
+    font-style: italic;
+    letter-spacing: 2px;
+   
 }
 
 .logo_design{
@@ -21,7 +31,7 @@ header {
 
 nav{
     margin-bottom: 2px;
-    background-color: black;
+    background-color: #302B2B;
     color: white;
 }
 
