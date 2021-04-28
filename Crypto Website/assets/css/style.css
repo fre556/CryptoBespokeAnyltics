@@ -91,7 +91,7 @@ hr {
   /*Footer*/
 
   footer {
-      background-color: rgb(40, 50, 55) ;
+      background-color: #302B2B ;
       padding-top: 2rem;
       color: #FFFFFF;
       border-top: 3px solid white;
@@ -124,7 +124,7 @@ hr {
 /*Hero Section*/
 .hero {
     background-color: #302B2B;
-    height: 70vh;
+    height: 60vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -133,7 +133,7 @@ hr {
 }
 
 .hero div h1 {
-    color: 	#DAA520;
+    color: 	 #302B2B;
 }
 
 .hero div h4 {
@@ -181,24 +181,17 @@ form img {
     height: auto;
 }
 
-.screwleft {
-    float: left;
-}
-.screwright {
-    float: right;
-}
-
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*About page---------------------------------------------------------------------------------------------------------------------------*/
 
 .text-center h1 {
-    margin-top: 1rem;
+    margin-top: 1 rem;
 }
 
 .text-center button {
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 
