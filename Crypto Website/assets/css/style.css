@@ -1,169 +1,191 @@
 /* Font-family for the web-page */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url(./form.scss);
 html, body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Noto Sans', sans-serif;
-    width: 100%;
-    height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  height: 100%;
 }
+
 header {
-    margin-bottom: 2px;
-    background-color: #302B2B;
-    color: white;
-    font-family: 'Abril Fatface';
-    
+  margin-bottom: 2px;
+  background-color: #302B2B;
+  color: white;
+  font-family: 'Abril Fatface';
 }
 
-.logo{
-    font-size: 2em;
-    border: grey;
-    font-style: italic;
-    letter-spacing: 2px;
-   
+.logo {
+  font-size: 2em;
+  border: grey;
+  font-style: italic;
+  letter-spacing: 2px;
 }
 
-.logo_design{
-    color: white;
-    
+.logo_design {
+  color: white;
 }
 
-nav{
-    margin-bottom: 2px;
-    background-color: #302B2B;
-    color: white;
+nav {
+  margin-bottom: 2px;
+  background-color: #302B2B;
+  color: white;
 }
 
 /*Frequently used*/
 hr {
-    border-top: 3px solid #DAA520;
-    width: 30%;
+  border-top: 3px solid #DAA520;
+  width: 30%;
 }
 
 /*For setting padding in columns*/
 .paddingimg {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-
 /*Navbar*/
-
 .navbar-brand #logo-normal {
-    height: 70px;
-    display:block;
+  height: 70px;
+  display: block;
 }
 
 .navbar-brand #logo-phone {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    padding: 0 1rem;
-    border-bottom: 3px solid white;
-    outline: 2px solid 	white;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.8);
-    
+  padding: 0 1rem;
+  border-bottom: 3px solid white;
+  outline: 2px solid 	white;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8);
 }
 
 .navbar-nav li {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 
-.navbar .navbar-nav .nav-link:focus, 
+.navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav {
-    color: white;
-    font-weight: 500;
+  color: white;
+  font-weight: 500;
 }
-
 
 .navbar .navbar-nav .nav-item .active {
-    color: #ffffff;
-    font-weight: 500;
+  color: #ffffff;
+  font-weight: 500;
 }
-
 
 .navbar-collapse {
-    text-align: center;
-  }
-
-  /*Footer*/
-
-  footer {
-      background-color: #302B2B ;
-      padding-top: 2rem;
-      color: #FFFFFF;
-      border-top: 3px solid white;
-      outline: 2px solid white;
-      
-  }
-  
-  #footer-logo img {
-      height: 90px;
-      padding-bottom: .3rem;
-  }
-
-  .motto p {
-    font-size: 12px;
+  text-align: center;
 }
 
-  .contacticon p i {
+/*Footer*/
+footer {
+  background-color: #302B2B;
+  padding-top: 2rem;
+  color: #FFFFFF;
+  border-top: 3px solid white;
+  outline: 2px solid white;
+}
 
-    color: white;
-  }
+#footer-logo img {
+  height: 90px;
+  padding-bottom: .3rem;
+}
 
+.motto p {
+  font-size: 12px;
+}
 
-  #socket {
-    border-top: 1px solid white;
-    padding: .3rem 0;
-  }
+.contacticon p i {
+  color: white;
+}
+
+#socket {
+  border-top: 1px solid white;
+  padding: .3rem 0;
+}
 
 /*Home Page -------------------------------------------------------------------------------------------------------------------------*/
-  
 /*Hero Section*/
 .hero {
-    background-color: #302B2B;
-    height: 60vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,1);
-    margin-bottom: 2rem;
+  background-color: #302B2B;
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 10px 0 black;
+          box-shadow: 0 0 10px 0 black;
+  margin-bottom: 2rem;
 }
 
 .hero div h1 {
-    color: 	 #302B2B;
+  color: #302B2B;
 }
 
 .hero div h4 {
-    color: #FFFFFF;
-    padding-bottom: 1rem;
+  color: #FFFFFF;
+  padding-bottom: 1rem;
 }
-/*Services page------------------------------------------------------------------------------------------------------------------------*/
 
+/*Services page------------------------------------------------------------------------------------------------------------------------*/
 .bordertopgold {
-    border-top: 3px solid #f8f8f7;
+  border-top: 3px solid #f8f8f7;
 }
 
 /*Removes border accordian, found the solution here:  https://kriesi.at/support/topic/remove-border-from-accordion-element/ */
-
-.noborder{
-    border-color: transparent !important;
+.noborder {
+  border-color: transparent !important;
 }
 
 .servicesfooter {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .marginbutton p button {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*Contact page-------------------------------------------------------------------------------------------------------------------------*/
+div {
+  width: inherit;
+  margin-bottom: 1rem;
+}
 
+label {
+  display: block;
+  color: #fff;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+  width: inherit;
+  height: 2rem;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="submit"] {
+  height: 2.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #0971f1;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  color: #ff9900;
+}
+
+/*
 form {
     
     border: 1px solid #D3D3D3;
@@ -180,77 +202,63 @@ form img {
     width: 3%;
     height: auto;
 }
-
+*/
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*About page---------------------------------------------------------------------------------------------------------------------------*/
-
 .text-center h1 {
-    margin-top: 1 rem;
+  margin-top: 1 rem;
 }
 
 .text-center button {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
-
 /*Media Queries*/
-
 @media (max-width: 480px) {
-
-.navbar-brand #logo-normal {
-        display:none;
-    }
-    
-.navbar-brand #logo-phone {
-        height: 70px;
-        display: block;
-    }
- 
-.resizeimg {
-        width: 97%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    } 
-
-form img {
-        width: 12%;
-        height: auto;
-    }
-
-
-
+  .navbar-brand #logo-normal {
+    display: none;
+  }
+  .navbar-brand #logo-phone {
+    height: 70px;
+    display: block;
+  }
+  .resizeimg {
+    width: 97%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form img {
+    width: 12%;
+    height: auto;
+  }
 }
 
-@media (min-width: 480px) and  (max-width: 767px) {
-
-    .resizeimg {
-        width: 95%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    } 
-
-    form img {
-        width: 6%;
-        height: auto;
-    }
+@media (min-width: 480px) and (max-width: 767px) {
+  .resizeimg {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form img {
+    width: 6%;
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-    .resizeimg {
-        width: 95%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    } 
-
-    form img {
-        width: 5%;
-        height: auto;
-    }
-    
+  .resizeimg {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form img {
+    width: 5%;
+    height: auto;
+  }
 }
-
+/*# sourceMappingURL=style.css.map */
