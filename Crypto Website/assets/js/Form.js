@@ -1,57 +1,44 @@
-import { render } from "react-dom";
-import { useForm } from "react-cool-form";
+import React from "react";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
-import "assets/css/styles.css";
-
-const Field = ({ label, id, error, ...rest }) => (
-  <div>
-    <label htmlFor={id}>{label}</label>
-    <input id={id} {...rest} />
-    {error && <p>{error}</p>}
-  </div>
-);
-
-function App() {
-  const { form, mon } = useForm({
-    // (Strongly advise) Provide the default values just like we use React state
-    defaultValues: { username: "", email: "", password: "" },
-    // The event only triggered when the form is valid
-    onSubmit: (values) => alert(JSON.stringify(values, undefined, 2))
-  });
-  // We can enable the "errorWithTouched" option to filter the error of an un-blurred field
-  // Which helps the user focus on typing without being annoyed by the error message
-  const errors = mon("errors", { errorWithTouched: true });
-
-  return (
-    <form ref={form} noValidate>
-      <Field
-        label="Username"
-        id="username"
-        name="username"
-        // Support built-in validation
-        required
-        error={errors.username}
-      />
-      <Field
-        label="Email"
-        id="email"
-        name="email"
-        type="email"
-        required
-        error={errors.email}
-      />
-      <Field
-        label="Password"
-        id="password"
-        name="password"
-        type="password"
-        required
-        minLength={8}
-        error={errors.password}
-      />
-      <input type="submit" />
-    </form>
-  );
-}
-
-render(<App />, document.getElementById("root"));
+const FormPage = () => {
+return (
+<MDBContainer>
+  <MDBRow>
+    <MDBCol md="6">
+      <form>
+        <p className="h4 text-center mb-4">Write to us</p>
+        <label htmlFor="defaultFormContactNameEx" className="grey-text">
+          Your name
+        </label>
+        <input type="text" id="defaultFormContactNameEx" className="form-control" />
+        <br />
+        <label htmlFor="defaultFormContactEmailEx" className="grey-text">
+          Your email
+        </label>
+        <input type="email" id="defaultFormContactEmailEx" className="form-control" />
+        <br />
+        <label htmlFor="defaultFormContactSubjectEx" className="grey-text">
+          Subject
+        </label>
+        <input type="text" id="defaultFormContactSubjectEx" className="form-control" />
+        <br />
+        <label htmlFor="defaultFormContactMessageEx" className="grey-text">
+          Your message
+        </label>
+        <textarea type="text" id="defaultFormContactMessageEx" className="form-control" rows="3" />
+        <div className="text-center mt-4">
+                  <MDBBtn color="warning" outline type="submit">
+                    Send
+                    <MDBIcon far icon="paper-plane" className="ml-2" />
+                  </MDBBtn>
+                </div>
+              </form>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      );
+    };
+    const domContainer = document.querySelector('#like_button_container');
+    ReactDOM.render(e(LikeButton), domContainer);
+    export default FormPage;
