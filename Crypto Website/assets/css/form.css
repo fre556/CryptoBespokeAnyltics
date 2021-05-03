@@ -1,3 +1,7 @@
+.form-height {
+  height: 80vh;
+}
+
 .cont-contactInfo {
   float: left;
   padding-right: 5%;
@@ -59,7 +63,7 @@
 }
 
 .cont-contactBtn .cont-flip .front {
-  background-color: #00E869;
+  background-color: #302b2b;
 }
 
 .cont-contactBtn .cont-flip .back {
@@ -109,7 +113,7 @@
 }
 
 .cont-contactBtn .contact-form input[type="submit"] {
-  background-color: #00E869;
+  background-color: #302b2b;
   border: none;
   color: #fff;
   height: 45px;
@@ -143,5 +147,10 @@
   text-transform: uppercase;
   text-decoration: none;
   width: 100%;
+}
+
+.background-grey {
+  background-color: #302b2b;
+  background-image: url("../images/contact/test-background.png");
 }
 /*# sourceMappingURL=form.css.map */
