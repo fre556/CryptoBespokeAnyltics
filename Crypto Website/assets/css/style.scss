@@ -59,11 +59,14 @@ hr {
     display: none;
 }
 
+.navbar-light .navbar-toggler-icon{
+    
+}
 .navbar {
     padding: 0 1rem;
     border-bottom: 3px solid white;
     outline: 2px solid 	white;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.8);
+    box-shadow: 0 0 8px 0 rgba(255, 253, 253, 0.8);
     
 }
 

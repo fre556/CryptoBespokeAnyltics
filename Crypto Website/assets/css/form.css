@@ -2,6 +2,10 @@
   height: 80vh;
 }
 
+.form-padding {
+  padding-top: 25vh;
+}
+
 .cont-contactInfo {
   float: left;
   padding-right: 5%;
@@ -38,6 +42,7 @@
   position: relative;
   -webkit-perspective: 800px;
           perspective: 800px;
+  padding-top: 15vh;
 }
 
 .cont-contactBtn .cont-flip {
