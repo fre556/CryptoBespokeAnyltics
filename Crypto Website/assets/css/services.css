@@ -71,6 +71,55 @@
   width: 100%;
 }
 
+.dailyreport {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dailyreport:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #302b2b;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.dailyreport:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #eb9800;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.dailyreport:hover {
+  color: #fff;
+}
+
+.dailyreport:hover:before {
+  width: 100%;
+}
+
 .card {
   width: 600px;
   margin: 0 auto;
